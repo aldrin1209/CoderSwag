@@ -4,6 +4,7 @@ import android.content.AbstractThreadedSyncAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.aldrin.coderswag.Adapters.CategoryAdapter
 import com.aldrin.coderswag.Model.Category
 import com.aldrin.coderswag.R
@@ -19,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         adapter = CategoryAdapter(this, DataService.categories)
-
         categoryListView.adapter = adapter
     }
 }
